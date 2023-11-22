@@ -1,0 +1,13 @@
+package com.poyo.ow.Models
+
+data class DVaXX(
+    //val assists: Any,
+    //val average: AverageXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    val best: BestXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    val combat: CombatXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+
+    val game: GameXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    //val heroSpecific: HeroSpecificXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    val matchAwards: MatchAwardsXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+
+)

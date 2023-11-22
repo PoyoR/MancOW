@@ -1,0 +1,13 @@
+package com.poyo.ow.Models
+
+data class GenjiXX(
+    //val assists: Any,
+    //val average: AverageXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    val best: BestXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    val combat: CombatXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+
+    val game: GameXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    //val heroSpecific: HeroSpecificXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    val matchAwards: MatchAwardsXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    //val miscellaneous: MiscellaneousXXXXXXXXXXXXXXXXXXXXX
+)

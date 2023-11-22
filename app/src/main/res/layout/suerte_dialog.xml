@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/ow_logo_2" />
+
+            <TextView
+                android:id="@+id/txtMsgDialogLuck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/big_noodle_titling"
+                android:gravity="center_horizontal"
+                android:textColor="#595959"
+                android:textSize="20sp"
+                tools:text="Hoy ganaras mucho" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/ow_orange"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/trailer"
+                android:gravity="center_horizontal"
+                android:text="Héroe de la suerte"
+                android:textColor="#040404"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imgHeroLuck"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/trailer"
+                android:gravity="center_horizontal"
+                android:text="Mapa de la suerte"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imgMapLuck"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCloseDialogLuck"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/big_noodle_titling_oblique"
+                android:text="Aceptar"
+                android:textColor="@color/ow_blue_2"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="by Glicius"
+                android:textColor="#BDBDBD"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

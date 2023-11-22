@@ -1,0 +1,13 @@
+package com.poyo.ow.Models
+
+data class BrigitteXX(
+    //val assists: AssistsXXXXXXXXXXXXXXXXXXXX,
+    //val average: AverageXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    val best: BestXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    val combat: CombatXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+
+    val game: GameXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    //val heroSpecific: HeroSpecificXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+    val matchAwards: MatchAwardsXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+
+)

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HeroesFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0C4581">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroAna"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ana" />
+
+                <ImageView
+                    android:id="@+id/imgHeroAshe"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ashe" />
+
+                <ImageView
+                    android:id="@+id/imgHeroBaptiste"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/baptiste" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroBastion"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bastion" />
+
+                <ImageView
+                    android:id="@+id/imgHeroBrigite"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/brigitte" />
+
+                <ImageView
+                    android:id="@+id/imgHeroDva"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dva" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroDoomfist"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/doomfist" />
+
+                <ImageView
+                    android:id="@+id/imgHeroEcho"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/echo" />
+
+                <ImageView
+                    android:id="@+id/imgHeroGenji"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/genji" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroHanzo"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/hanzo" />
+
+                <ImageView
+                    android:id="@+id/imgHeroJunkrat"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/junkrat" />
+
+                <ImageView
+                    android:id="@+id/imgHeroLucio"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lucio" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroMccree"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mccree" />
+
+                <ImageView
+                    android:id="@+id/imgHeroMei"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mei" />
+
+                <ImageView
+                    android:id="@+id/imgHeroMercy"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mercy" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroMoira"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/moira" />
+
+                <ImageView
+                    android:id="@+id/imgHeroOrisa"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/orisa" />
+
+                <ImageView
+                    android:id="@+id/imgHeroPhara"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/phara" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroReaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/reaper" />
+
+                <ImageView
+                    android:id="@+id/imgHeroRein"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/reinhardt" />
+
+                <ImageView
+                    android:id="@+id/imgHeroRoadhog"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roadhog" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroSigma"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sigma" />
+
+                <ImageView
+                    android:id="@+id/imgHeroSoldado"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/soldado" />
+
+                <ImageView
+                    android:id="@+id/imgHeroSombra"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sombra" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroSymmeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/symmetra" />
+
+                <ImageView
+                    android:id="@+id/imgHeroTorb"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/torbjorn" />
+
+                <ImageView
+                    android:id="@+id/imgHeroTracer"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tracer" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroWidow"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/widowmaker" />
+
+                <ImageView
+                    android:id="@+id/imgHeroWinston"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/winston" />
+
+                <ImageView
+                    android:id="@+id/imgHeroHammond"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/hammond" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_perfil2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgHeroZarya"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zarya" />
+
+                <ImageView
+                    android:id="@+id/imgHeroZen"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zenyatta" />
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

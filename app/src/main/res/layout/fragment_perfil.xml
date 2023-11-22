@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil.View.PerfilFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0C4581">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/bg_perfil"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.github.abdularis.civ.CircleImageView
+                            android:id="@+id/imgIconUser"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="4dp"
+                            android:clickable="false"
+                            android:src="@drawable/ic_launcher_background"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.499"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:strokeColor="#FFF"
+                            app:strokeWidth="3dp" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/transp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/txtNomUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/big_noodle_titling"
+                            android:gravity="center_horizontal"
+                            android:textColor="#FFF"
+                            android:textSize="22sp"
+                            tools:text="User" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:layout_marginRight="5dp"
+                                        app:srcCompat="@drawable/tank" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/big_noodle_titling_oblique"
+                                        android:gravity="center_horizontal"
+                                        android:text="Tanque"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imgTankIcon"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginRight="5dp"
+                                        tools:src="@tools:sample/avatars" />
+
+                                    <TextView
+                                        android:id="@+id/txtTankRank"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/big_noodle_titling"
+                                        android:gravity="center"
+                                        android:textColor="#FFF"
+                                        android:textSize="16sp"
+                                        tools:text="4000" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:layout_marginRight="5dp"
+                                        app:srcCompat="@drawable/dps" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/big_noodle_titling_oblique"
+                                        android:gravity="center_horizontal"
+                                        android:text="Dps"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imgDpsIcon"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginRight="5dp"
+                                        tools:src="@tools:sample/avatars" />
+
+                                    <TextView
+                                        android:id="@+id/txtDpsRank"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/big_noodle_titling"
+                                        android:gravity="center"
+                                        android:textColor="#FFF"
+                                        android:textSize="16sp"
+                                        tools:text="4000" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:layout_marginRight="5dp"
+                                        app:srcCompat="@drawable/support" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/big_noodle_titling_oblique"
+                                        android:gravity="center_horizontal"
+                                        android:text="Support"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imgSupportIcon"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginRight="5dp"
+                                        tools:src="@tools:sample/avatars" />
+
+                                    <TextView
+                                        android:id="@+id/txtSupportRank"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/big_noodle_titling"
+                                        android:gravity="center"
+                                        android:textColor="#FFF"
+                                        android:textSize="16sp"
+                                        tools:text="4000" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ow_blue_2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/tank" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#2477CD" />
+
+                        <TextView
+                            android:id="@+id/txtTankDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/big_noodle_titling_oblique"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#2477CD" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/big_noodle_titling"
+                            android:gravity="center_horizontal"
+                            android:text="Consejos"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/txtTankAdvice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/big_noodle_titling_oblique"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/dps" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#2477CD" />
+
+                        <TextView
+                            android:id="@+id/txtDpsDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/big_noodle_titling_oblique"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#2477CD" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/big_noodle_titling"
+                            android:gravity="center_horizontal"
+                            android:text="Consejos"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/txtDpsAdvice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/big_noodle_titling_oblique"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/support" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#2477CD" />
+
+                        <TextView
+                            android:id="@+id/txtSupportDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/big_noodle_titling_oblique"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#2477CD" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/big_noodle_titling"
+                            android:gravity="center_horizontal"
+                            android:text="Consejos"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/txtSupportAdvice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/big_noodle_titling_oblique"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#EFEFEF"
+                        android:fontFamily="@font/trailer"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="Partidas rápidas"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Top 3 heroes"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/imgTop1Quick"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:elevation="10dp"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <ImageView
+                            android:id="@+id/imgTop2Quick"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:elevation="10dp"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <ImageView
+                            android:id="@+id/imgTop3Quick"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:elevation="10dp"
+                            tools:srcCompat="@tools:sample/avatars" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#EFEFEF"
+                        android:fontFamily="@font/trailer"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="Partidas competitivas"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Top 3 heroes"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/imgTop1Comp"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:elevation="10dp"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <ImageView
+                            android:id="@+id/imgTop2Comp"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:elevation="10dp"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <ImageView
+                            android:id="@+id/imgTop3Comp"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:elevation="10dp"
+                            tools:srcCompat="@tools:sample/avatars" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>
